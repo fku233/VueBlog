@@ -1,22 +1,22 @@
 import list from './components/List.vue'
 import article from './components/Article.vue'
-import config from './config'
+import { SITENAME } from './config'
 
 export default (router) => {
   router.map({
-    '/list': {
-      name: 'list',
+    '/home': {
+      name: 'home',
       component: list,
-      title: config.homeTitle
+      title: SITENAME
     },
-    '/article/:fileName': {
+    '/article/:title': {
       name: 'article',
       component: article,
-      title: config.homeTitle
+      title: SITENAME
     }
   })
 
   router.redirect({
-    '*': '/list'
+    '*': '/home'
   })
 }

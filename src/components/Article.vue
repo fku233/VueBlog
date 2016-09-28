@@ -33,9 +33,9 @@
     },
     route:{
       data({ to }) { // transition.to 路由对象
-        const FILENAME = to.params.fileName;
-        document.title = `${asTitle(FILENAME)} - ${to.title}`;
-        this.setHtml(DETAIL_API(FILENAME));
+        const TITLE = to.params.title;
+        document.title = `${asTitle(TITLE)} - ${to.title}`;
+        this.setHtml(DETAIL_API(TITLE));
       }
     }
   }

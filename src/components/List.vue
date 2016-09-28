@@ -3,7 +3,7 @@
     <h2 v-if="!items.length">载入中...</h2>
     <ul>
       <li v-for="item in items">
-        <a v-link="{ name: 'article', params: { fileName: encodeURI(item.name) } }">{{ item.name | asTitle }}</a>
+        <a v-link="{ name: 'article', params: { title: encodeURI(item.name) } }">{{ item.name | asTitle }}</a>
       </li>
     </ul>
   </div>

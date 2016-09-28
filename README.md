@@ -1,27 +1,28 @@
 # vue-gh-pages
 
-> A Vue.js project
+> 一个无需生成器的静态博客程序，依托于 GitHub ！
 
-## Build Setup
+##使用
 
-``` bash
-# install dependencies
-npm install
+1. Fork / Clone  
+2. 修改 `config.js` 文件中的 `REPOS` 信息  
+3. 依次执行:  
+    `npm install`
 
-# serve with hot reload at localhost:8080
-npm run dev
+    `npm run build`
+4. 将 dist 文件夹下的静态文件放入 gh-pages 分支，搭建完成！🍻
 
-# build for production with minification
-npm run build
+##更新文章
+- 切换到`md`分支，使用任意 `MarkDown` 编辑器，在 `markdown` 目录下新建 `.md` 格式文档，再push到`md`分支即可
 
-# run unit tests
-npm run unit
+##自定义域名
+- 切换到`gh-pages`分支，修改 `CNAME` 文件中的域名信息，并将您绑定的域名 通过 `cname` 的方式指向 `您的用户名.github.io`
 
-# run e2e tests
-npm run e2e
 
-# run all tests
-npm test
-```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+##预览地址
+- http://md.ridog.me
+
+##Git 地址
+- https://github.com/x-pengg/vue-gh-pages

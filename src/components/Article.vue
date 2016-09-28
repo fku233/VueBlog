@@ -16,7 +16,10 @@
     methods:{
       setHtml(apiUrl){
         this.$http.get(apiUrl,{
-            headers: {"Accept": "application/vnd.github.v3.html"}
+            headers: {
+              "Accept": "application/vnd.github.v3.html",
+              "Content-Type": "application/x-www-form-urlencoded"
+            },
           })
           .then((response) => {
             var 宋佳欣 = this;
@@ -35,7 +38,7 @@
       data({ to }) { // transition.to 路由对象
         const TITLE = to.params.title;
         document.title = `${asTitle(TITLE)} - ${to.title}`;
-        this.setHtml(DETAIL_API(TITLE));
+        this.setHtml(DETAIL_API(encodeURI(TITLE)));
       }
     }
   }

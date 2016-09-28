@@ -3,7 +3,7 @@
     <h2 v-if="!items.length">载入中...</h2>
     <ul>
       <li v-for="item in items">
-        <a v-link="{ name: 'article', params: { title: encodeURI(item.name) } }">{{ item.name | asTitle }}</a>
+        <a v-link="{ name: 'article', params: { title: item.name } }">{{ item.name | asTitle }}</a>
       </li>
     </ul>
   </div>
@@ -26,13 +26,17 @@
     },
     methods:{
       setItems(){
-        this.$http.get(API)
-          .then((response) => {
-            this.items = response.data;
-          })
-          .catch(function(response) {
-            console.log(response)
-          })
+        this.$http.get(API,{
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+          },
+        })
+        .then((response) => {
+          this.items = response.data;
+        })
+        .catch(function(response) {
+          console.log(response)
+        })
       }
     }
   }

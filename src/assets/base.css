@@ -1,0 +1,13 @@
+body{
+  font-family: "Lato","Hiragino Sans GB", "Helvetica Neue", "Micrsoft YaHei", sans-serif;
+  background-color: #f7f8f9;
+}
+ul,ol{
+  list-style: none;
+}
+a{
+  background: transparent;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}

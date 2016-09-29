@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div id="article">
+      <h2>{{title}}</h2>
       <article v-html="html"></article>
     </div>
 </template>
@@ -10,35 +11,40 @@
   export default{
     data() {
       return {
-         html:'<h2>载入中...</h2>',
+        html: '<h2>载入中...</h2>',
+        title: ''
       }
     },
     methods:{
       setHtml(apiUrl){
+        this.$Progress.start();
         this.$http.get(apiUrl,{
             headers: {
-              "Accept": "application/vnd.github.v3.html",
-              "Content-Type": "application/x-www-form-urlencoded"
+              "Accept": "application/vnd.github.v3.html"
             },
           })
           .then((response) => {
+            this.$Progress.increase(10);
             var 宋佳欣 = this;
             var fr = new FileReader();
             fr.readAsText(response.body);
             fr.onloadend = function() {
-              宋佳欣.$set('html', fr.result)
+              宋佳欣.$Progress.finish();
+              宋佳欣.$set('html', fr.result);
             }
           })
           .catch(function(response) {
-            console.log(response)
+            this.$Progress.fail();
+            console.log(response);
           })
       }
     },
     route:{
       data({ to }) { // transition.to 路由对象
-        const TITLE = to.params.title;
-        document.title = `${asTitle(TITLE)} - ${to.title}`;
-        this.setHtml(DETAIL_API(encodeURI(TITLE)));
+        let title = `${asTitle(to.params.title)}`;
+        document.title = `${title} - ${to.title}`;
+        this.title = title;
+        this.setHtml(DETAIL_API(encodeURI(to.params.title)));
       }
     }
   }
@@ -46,6 +52,15 @@
 </script>
 
 <style>
+
+  #article h2{
+    font-weight: normal;
+  }
+
+  article{
+    padding: 1em 0;
+  }
+
   /* Style from GitHub */
   .pl-c {
     color: #969896

@@ -2,7 +2,7 @@
     <div>
       <header id="header">
         <div id="header-warp">
-          <div id="logo"><a href="/">OwO</a></div>
+          <div id="logo"><a v-link="{name:'home'}">OwO</a></div>
           <nav id="nav" class="clear">
             <a href="https://github.com/x-pengg/vue-gh-pages/tree/md/markdown" target="_blank">Write</a>
             <a v-link="{ name: 'article', params: { title: 'about.md' } }">About</a>

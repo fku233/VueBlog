@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="articles">
     <h2 v-if="!items.length">载入中...</h2>
     <ul>
       <li v-for="item in items">
@@ -26,6 +26,7 @@
     },
     methods:{
       setItems(){
+        this.$Progress.start();
         this.$http.get(API,{
           headers: {
             "Content-Type": "application/x-www-form-urlencoded"
@@ -33,8 +34,10 @@
         })
         .then((response) => {
           this.items = response.data;
+          this.$Progress.finish();
         })
         .catch(function(response) {
+          this.$Progress.fail();
           console.log(response)
         })
       }
@@ -44,5 +47,17 @@
 </script>
 
 <style>
+
+  ul,ol{
+    list-style: none;
+  }
+
+  #articles ul li{
+    padding: 1em;
+    border-bottom: 1px solid #eee;
+    line-height: 4;
+    font-size: 1.6em;
+    font-weight: 600;
+  }
 
 </style>

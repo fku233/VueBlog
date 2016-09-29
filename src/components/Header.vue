@@ -6,6 +6,7 @@
           <nav id="nav" class="clear">
             <a href="https://github.com/x-pengg/vue-gh-pages/tree/md/markdown" target="_blank">Write</a>
             <a v-link="{ name: 'article', params: { title: 'about.md' } }">About</a>
+            <a v-link="{ name: 'article', params: { title: 'friends.md' } }">Friends</a>
           </nav>
         </div>
       </header>

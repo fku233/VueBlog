@@ -59,6 +59,7 @@
 
   article{
     padding: 1em 0;
+    font-size: 17px;
   }
 
   /* Style from GitHub */

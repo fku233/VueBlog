@@ -1,6 +1,6 @@
 <template>
     <div>
-      <header id="header">
+      <header>
         <div id="header-warp">
           <div id="logo"><a v-link="{name:'home'}">OwO</a></div>
           <nav id="nav" class="clear">
@@ -13,13 +13,6 @@
     </div>
 </template>
 <style>
-  #header {
-    z-index: 2;
-    top: 0;
-    right: 0;
-    left: 0;
-    box-shadow: 0 0 1px rgba(0,0,0,.15);
-  }
 
   #header-warp {
     line-height: 65px;

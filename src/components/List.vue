@@ -27,11 +27,7 @@
     methods:{
       setItems(){
         this.$Progress.start();
-        this.$http.get(API,{
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
-          },
-        })
+        this.$http.get(API)
         .then((response) => {
           this.items = response.data;
           this.$Progress.finish();

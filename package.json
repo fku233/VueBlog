@@ -12,6 +12,8 @@
   "dependencies": {
     "babel-runtime": "^6.0.0",
     "es6-promise": "^4.0.2",
+    "highlight.js": "^9.7.0",
+    "marked": "^0.3.6",
     "vue": "^1.0.21",
     "vue-resource": "^1.0.3",
     "vue-router": "^0.7.13"
@@ -30,9 +32,11 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.4",
     "function-bind": "^1.0.2",
+    "highlight.js": "^9.7.0",
     "html-webpack-plugin": "^2.8.1",
     "http-proxy-middleware": "^0.12.0",
     "json-loader": "^0.5.4",
+    "marked": "^0.3.6",
     "ora": "^0.2.0",
     "shelljs": "^0.6.0",
     "url-loader": "^0.5.7",

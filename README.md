@@ -22,7 +22,7 @@
 
 
 ##预览地址
-- http://md.ridog.me
+- https://maybelive.com
 
 ##Git 地址
 - https://github.com/x-pengg/vue-gh-pages

@@ -1,7 +1,7 @@
 <template>
     <div id="footer">
-      <a v-link="{ name: 'article', params: { title: 'about.md' } }">About</a>
-      <a v-link="{ name: 'article', params: { title: 'friends.md' } }">Friends</a>
+      <a v-link="{ name: 'article', params: { name: 'about.md' } }">About</a>
+      <a v-link="{ name: 'article', params: { name: 'friends.md' } }">Friends</a>
       <a v-link="{name:'home'}" class="❤">❤</a>
       <a href="https://github.com/x-pengg/vue-gh-pages/tree/md/markdown" target="_blank">Write</a>
       <a href="https://github.com/x-pengg" target="_blank">GitHub</a>

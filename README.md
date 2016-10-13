@@ -32,7 +32,7 @@
 
 
 ## TODO
-- [] 加入 sessionStorage 
+- [ ] 加入 sessionStorage 
 - [ ] 文章日期/排序
 - [ ] `About` `Friends` 不在主页列表显示
 - [ ] 样式调整

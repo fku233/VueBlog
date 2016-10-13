@@ -1,9 +1,9 @@
 <template>
+  <h2 v-if="!items.length" class="loading" style="height:300px; padding-top:200px">载入中...</h2>
   <div id="articles">
-    <h2 v-if="!items.length">载入中...</h2>
     <ul>
       <li v-for="item in items">
-        <a v-link="{ name: 'article', params: { title: item.name } }">{{ item.name | asTitle }}</a>
+        <a v-link="{ name: 'article', params: { name: item.name } }">{{ item.name | asTitle }}</a>
       </li>
     </ul>
   </div>
@@ -52,7 +52,7 @@
     padding: 1em;
     border-bottom: 1px solid #eee;
     line-height: 4;
-    font-size: 1.6em;
+    font-size: 1.3em;
     font-weight: 600;
   }
 

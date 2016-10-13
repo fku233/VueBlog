@@ -9,7 +9,7 @@ export default (router) => {
       component: list,
       title: SITENAME
     },
-    '/article/:title': {
+    '/article/:name': {
       name: 'article',
       component: article,
       title: SITENAME

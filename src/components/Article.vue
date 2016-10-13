@@ -1,9 +1,9 @@
 <template>
     <div id="article">
-      <h2>{{title}}</h2>
+      <h2 class="title">{{title}}</h2>
       <article v-html="html"></article>
-      <div id="footer">
-        {{size}}字
+      <div id="words">
+        {{words}}
       </div>
     </div>
 </template>
@@ -14,9 +14,9 @@
   export default{
     data() {
       return {
-        html: '<h2>载入中...</h2>',
+        html: '<h2 class="loading">载入中...</h2>',
         title: '',
-        size:0
+        words:'',
       }
     },
     filters: {
@@ -29,21 +29,21 @@
           .then((response) => {
               this.$Progress.finish();
             this.html = asHtml(response.body);
-            this.size = Math.floor(response.body.length/2);
+            this.words = Math.floor(response.body.length/2)+'字';
 
           })
           .catch(function(response) {
             this.$Progress.fail();
-            console.log(response);
           })
       }
     },
     route:{
       data({ to }) { // transition.to 路由对象
-        let title = `${asTitle(to.params.title)}`;
+        let title = `${asTitle(to.params.name)}`||to.params.name;
         document.title = `${title} - ${to.title}`;
         this.title = title;
-        this.setHtml(DETAIL_API(encodeURI(to.params.title)));
+        history.pushState({},'', window.location.hash.replace(encodeURI(to.params.name),title));
+        this.setHtml(DETAIL_API(encodeURI(title+'.md')));
       }
     }
   }
@@ -56,20 +56,38 @@
     font-weight: normal;
   }
 
-  article{
-    padding: 1em 0;
+  #article{
+    padding: 2em;
     font-size: 17px;
+    line-height: 2em;
   }
 
-  #footer{
+  #article .title{
+    font-size: 2em;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: .4em;
+  }
+
+  #article a{
+    color: #999;
+    word-wrap: break-word;
+  }
+
+  #article a:hover{
+    color: #2B2B2B;
+  }
+
+  #words{
     width: 100%;
     text-align: center;
     margin-top: 2em;
     font-size: 16px;
   }
 
+
   code{
-    font-size: 10px;
+    font-size: 12px;
+    line-height: 1.5em;
   }
 
   @import "../assets/monokai_sublime.css";

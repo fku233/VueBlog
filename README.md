@@ -5,8 +5,10 @@
 ##使用
 
 1. Fork / Clone
+
 2. 修改 `config.js` 文件中的 `REPOS` 信息
 3. 依次执行:
+
     `npm install`
 
     `npm run build`
@@ -22,7 +24,15 @@
 
 
 ##预览地址
-- http://md.ridog.me
+- https://maybelive.com
 
 ##Git 地址
 - https://github.com/x-pengg/vue-gh-pages
+
+
+
+## TODO
+- [ ] 加入 sessionStorage 
+- [ ] 文章日期/排序
+- [ ] `About` `Friends` 不在主页列表显示
+- [ ] 样式调整

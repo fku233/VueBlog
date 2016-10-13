@@ -21,7 +21,9 @@
 - 切换到`gh-pages`分支，修改 `CNAME` 文件中的域名信息，并将您绑定的域名 通过 `cname` 的方式指向 `您的用户名.github.io`
 
 
+## 截图
 
+![](http://ww2.sinaimg.cn/large/0060lm7Tgw1f8qsorzb12j319b0lmtc2.jpg)
 
 ##预览地址
 - https://maybelive.com

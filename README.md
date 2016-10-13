@@ -23,7 +23,7 @@
 
 ## 截图
 
-![](http://ww2.sinaimg.cn/large/0060lm7Tgw1f8qsorzb12j319b0lmtc2.jpg)
+![](http://ww4.sinaimg.cn/large/a15b4afegw1f8r0ll7l7lj21ys11q7au)
 
 ##预览地址
 - https://maybelive.com

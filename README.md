@@ -7,7 +7,8 @@
 1. Fork / Clone
 
 2. 修改 `config.js` 文件中的 `REPOS` 信息
-3. 依次执行:  
+3. 依次执行:
+
     `npm install`
 
     `npm run build`

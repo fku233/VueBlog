@@ -38,3 +38,10 @@
 - [ ] 文章日期/排序
 - [ ] `About` `Friends` 不在主页列表显示
 - [x] 样式调整
+
+## 感谢：
+
+参考了以下项目  
+- https://github.com/viko16/vue-ghpages-blog/tree/vue-1
+- http://vuejs.github.io/vue-router/zh-cn/
+

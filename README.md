@@ -42,6 +42,7 @@
 ## 感谢：
 
 参考了以下项目  
+- https://github.com/itorr/itorr.github.io
 - https://github.com/viko16/vue-ghpages-blog/tree/vue-1
 - http://vuejs.github.io/vue-router/zh-cn/
 

@@ -1,6 +1,6 @@
 # 关于我
 
-## Web开发者
+### Web开发者
 
 - Java
 - Node.js
@@ -10,7 +10,7 @@
 - Vue.js/jQuery/lodash
 
 
-## 装备
+### 装备
 
 - 电脑: MacBook Pro 840 (2015 early)
 - 显示器: Dell U24U4H
@@ -20,18 +20,18 @@
 - 鼠标: Razer 地狱狂蛇(ABYSSUS) 2014
 - 机械键盘: IKBC POKER II
 
-## 放荡不羁 ~~基~~
+### 放荡不羁 ~~基~~
 
 > 直男癌患者，喜欢漂亮的小姐姐/小妹妹
 
 
-## 以后的以后
+### 以后的以后
 
 - 成为独立开发者
-- 和最爱的人，去安静的小镇买一所房子
+- 和最爱的人，去一个安静的小城市，买一所房子，在那里生活
  
  
-## 想和我做朋友吗
+### 想和我做朋友吗
 
 - [Email](i@ridog.me)
 - [Telegram](https://telegram.me/TateChan)

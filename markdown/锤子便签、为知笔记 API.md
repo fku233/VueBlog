@@ -1,8 +1,11 @@
 ## 锤子便签
 
 ### 获取 ticket
+
 https://account.smartisan.com/v2/session/?m=post
+
 方式：POST 
+
 参数：
 ```
 {
@@ -13,11 +16,15 @@ https://account.smartisan.com/v2/session/?m=post
 ```
 
 ### 获取个人信息
+
 https://cloud.smartisan.com/index.php?r=account%2Flogin
+
 方式：GET
+
 注意：需要往header 加入 `Cookie: SCA_SESS=${ticket }-a; SCA_LOGIN=1`
 
 ### 获取笔记列表
+
 https://cloud.smartisan.com/apps/note/index.php?r=v2%2FgetList 
 
 方式：GET
@@ -25,6 +32,7 @@ https://cloud.smartisan.com/apps/note/index.php?r=v2%2FgetList
 注意：需要往header 加入 `Cookie: SCA_SESS=${ticket }-a; SCA_LOGIN=1`
 
 ### 获取图片地址
+
 https://cloud.smartisan.com/notesimage/${PID}
 
 方式：GET
@@ -34,6 +42,7 @@ https://cloud.smartisan.com/notesimage/${PID}
 ## 为知笔记
 
 ### 登录
+
 https://note.wiz.cn/api/login
 
 方式：POST
@@ -72,8 +81,11 @@ https://note.wiz.cn/api/login
 ```
 
 ### 获取笔记列表
+
 https://note.wiz.cn/api/document/list
+
 方式：GET
+
 参数：
 ```
 {
@@ -90,7 +102,9 @@ https://note.wiz.cn/api/document/list
   "_": "1476933013368"
 }
 ```
+
 返回结果：
+
 ```
 {
   "code": 200,
@@ -119,9 +133,11 @@ https://note.wiz.cn/api/document/list
 ```
 
 ### 获取单个笔记详情
+
 https://note.wiz.cn/api/document/info
  
 方式：GET
+
 参数：
 ```
 {
@@ -133,7 +149,9 @@ https://note.wiz.cn/api/document/info
   "_": "1476933013616"
 }
 ```
+
 返回结果：
+
 ```
 {
   "code": 200,

@@ -4,7 +4,7 @@
 
 https://account.smartisan.com/v2/session/?m=post
 
-方式：POST 
+方式：`POST `
 
 参数：
 ```
@@ -19,7 +19,7 @@ https://account.smartisan.com/v2/session/?m=post
 
 https://cloud.smartisan.com/index.php?r=account%2Flogin
 
-方式：GET
+方式：`GET`
 
 注意：需要往header 加入 `Cookie: SCA_SESS=${ticket }-a; SCA_LOGIN=1`
 
@@ -27,7 +27,7 @@ https://cloud.smartisan.com/index.php?r=account%2Flogin
 
 https://cloud.smartisan.com/apps/note/index.php?r=v2%2FgetList 
 
-方式：GET
+方式：`GET`
 
 注意：需要往header 加入 `Cookie: SCA_SESS=${ticket }-a; SCA_LOGIN=1`
 
@@ -35,7 +35,7 @@ https://cloud.smartisan.com/apps/note/index.php?r=v2%2FgetList
 
 https://cloud.smartisan.com/notesimage/${PID}
 
-方式：GET
+方式：`GET`
 
 注意：需要往header 加入 `Cookie: SCA_SESS=${ticket }-a; SCA_LOGIN=1`
 
@@ -45,7 +45,7 @@ https://cloud.smartisan.com/notesimage/${PID}
 
 https://note.wiz.cn/api/login
 
-方式：POST
+方式：`POST`
 
 参数：
 ```
@@ -84,7 +84,7 @@ https://note.wiz.cn/api/login
 
 https://note.wiz.cn/api/document/list
 
-方式：GET
+方式：`GET`
 
 参数：
 ```
@@ -136,7 +136,7 @@ https://note.wiz.cn/api/document/list
 
 https://note.wiz.cn/api/document/info
  
-方式：GET
+方式：`GET`
 
 参数：
 ```
